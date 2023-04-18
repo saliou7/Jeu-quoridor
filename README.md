@@ -1,4 +1,3 @@
-
 # projet-quoridor
 Projet IA et Jeux 2022-2023, L3 Sorbonne Université
 
@@ -58,25 +57,6 @@ Le module `search` qui accompagne le cours est également disponible. Il permet 
 
 ## Travail demandé
 
-### Semaine 1
-**Prise en main**. A l'éxécution du fichier `main.py`, vous devez observer le comportement suivant: le joueur 0 (en haut du plateau) place tous ses murs les uns après les autres (avant que le joueur 1 ne joue). Puis le joueur 1 choisit un objectif au hasard sur la ligne qu'il doit atteindre et calcule le plus court chemin pour atteindre cette case, avant d'effectuer tous les déplacements nécessaire.
-
-Evidemment tout ceci ne respecte pas du tout les règles du jeu.
-
-:point_right: Modifiez le code de manière à ce que les deux joueurs jouent à tour de rôle de manière **aléatoire**, en suivant le principe suivant:
-* s'il reste au moins un mur à placer, le joueur choisit au hasard entre se déplacer et placer un mur.
-  * s'il choisit de poser un mur celui-ci sera déposé au hasard sur une position légale
-  * s'il choisit de se déplacer le joueur choisit le plus court chemin à un de ses objectifs (n'importe quelle position sur la ligne qui lui permet de gagner)
-
-:warning: il faudra bien tenir compte du fait que les joueurs ont pour objectif d'atteindre n'importe quelle case sur la ligne de départ adverse, et que les murs ne doivent pas couper tous les chemins qui mènent aux objectifs pour l'adversaire. Ceci n'est pas géré dans le code fourni qui est juste une base illustrative.
-
-
-### Semaine 2 et 3
 **Mise en place et test de différentes stratégies**. Vous vous inspirerez des méthodes vues en cours pour proposer au moins 3 stratégies en plus de la stratégie aléatoire élaborée en première semaine.
 Il peut être utile de distinguer plusieurs phases de jeux (ouverture, milieu de jeu, fin de jeu).
 Vous comparerez chacune de ces stratégies en les faisant jouer les unes contre les autres.
-
-
-### Semaine 4
-**Soutenances**. Celles-ci ont lieu en binôme. Vous présenterez les principaux résultats de votre projet.
-Le rapport doit être rédigé en markdown dans le fichier prévu à cet effet dans le répertoire `docs` (voir le template `rapport.md`).
